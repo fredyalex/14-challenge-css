@@ -1,1 +1,38 @@
 /* Objects */
+
+.o-flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.o-flex-column-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.o-flex-column-center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.o-grid-page {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-rows: auto 1fr auto;
+}
+
+.o-grid-responsive-columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--border-width-1px);
+    background-color: var(--color-border-gap-responsive-columns);
+}
+
+@media (min-width: 768px) {
+    .o-grid-responsive-columns {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

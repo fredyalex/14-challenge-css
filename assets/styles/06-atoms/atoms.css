@@ -1,1 +1,24 @@
 /* Atoms */
+
+.a-circle {
+    display: inline-block;
+    width: var(--size-10);
+    height: var(--size-10);
+    border-radius: 50%;
+    background-color: var(--color-neutral-white);
+}
+
+.a-icon {
+    width: var(--size-30);
+    height: var(--size-30);
+}
+
+.a-overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color-bg-overlay);
+    z-index: 1;
+}

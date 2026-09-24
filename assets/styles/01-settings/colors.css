@@ -1,0 +1,27 @@
+  :root {
+    /* Primary */
+    --color-primary-200: hsl(224, 100%, 95%);
+    --color-primary-400: hsl(220, 100%, 64%);
+    --color-primary-600: hsl(228, 100%, 60%);
+    --color-primary-700: hsl(228, 99%, 58%);
+
+    /* Neutrals */
+    --color-neutral-white: hsl(0, 0%, 100%);
+    --color-neutral-black: hsla(0, 0%, 0%, 0.25);
+
+    /* tokens */
+    --color-bg-body: var(--color-primary-700);
+    --color-bg-hero: var(--color-primary-700);
+    --color-bg-header: var(--color-primary-700);
+    --color-bg-card: var(--color-primary-700);
+    --color-bg-card-hover: var(--color-primary-600);
+    --color-bg-menu: var(--color-primary-700);
+    --color-bg-overlay: var(--color-neutral-black);
+    --color-text-body: var(--color-neutral-white);
+    --color-text-paragraph: var(--color-primary-200);
+    --color-text-link: var(--color-neutral-white);
+    --color-border-gap-responsive-columns: var(--color-primary-400);
+    --color-border-navbar: var(--color-primary-400);
+    --color-border-footer: var(--color-primary-400);
+    --color-border-button-focus: var(--color-neutral-white);
+  }

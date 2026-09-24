@@ -1,1 +1,66 @@
 /* Elements */
+
+body {
+    background-color: var(--color-bg-body);
+    color: var(--color-text-body);
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-body);
+    min-height: 100vh;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text-link);
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    padding: var(--spacing-4) var(--spacing-8);
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button:focus-visible {
+    outline: var(--border-width-2px) solid var(--color-border-button-focus);
+}
+
+h1,
+h2 {
+    font-size: var(--font-size-title);
+    font-weight: var(--font-weight-title);
+}
+
+p {
+    font-size: var(--font-size-paragraph);
+    font-weight: var(--font-weight-paragraph);
+    color: var(--color-text-paragraph);
+}
+
+header {
+    grid-area: header;
+    background-color: var(--color-bg-header);
+    position: relative;
+    z-index: 2;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}

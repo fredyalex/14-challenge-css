@@ -1,1 +1,119 @@
 /* Molecules */
+
+/* Navar */
+.m-logo {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-4);
+    padding: var(--spacing-4);
+}
+
+.m-menu {
+    padding: var(--spacing-56) var(--spacing-16);
+    width: 100%;
+    position: absolute;
+    top: calc(100% + var(--border-width-navbar));
+    left: 0;
+    background-color: var(--color-bg-menu);
+    text-align: center;
+}
+
+.m-menu__link {
+    font-size: var(--font-size-menu-link);
+    font-weight: var(--font-weight-menu-link);
+}
+
+.m-menu__link:hover,
+.m-menu__link:focus-visible {
+    outline: none;
+    text-decoration: underline;
+    text-decoration-thickness: var(--border-width-2px);
+    text-underline-offset: var(--spacing-8);
+}
+
+
+/* Hero */
+.m-hero {
+    padding: var(--spacing-36) var(--spacing-24);
+    gap: var(--spacing-20);
+    background-color: var(--color-bg-hero);
+}
+
+.m-hero__title {
+    font-size: var(--font-size-hero-title);
+    font-weight: var(--font-weight-hero-title);
+}
+
+.m-hero__paragraph {
+    font-size: var(--font-size-hero-paragraph);
+}
+
+/* Card */
+.m-card {
+    padding: var(--spacing-16);
+    gap: var(--spacing-140);
+    background-color: var(--color-bg-card);
+}
+
+.m-card:hover {
+    background-color: var(--color-bg-card-hover);
+    cursor: pointer;
+}
+
+.m-card__stats-number {
+    display: inline-block;
+}
+
+.m-card__paragraph-title {
+    color: var(--color-text-body);
+    font-weight: var(--font-weight-paragraph-title);
+}
+
+.m-card__paragraph {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+}
+
+@media (min-width: 768px) {
+    .m-hero {
+        grid-column: span 4;
+        grid-row: span 3;
+        text-align: center;
+    }
+
+    .m-menu {
+        padding: var(--spacing-16) var(--spacing-16);
+
+    }
+
+    .m-card {
+        gap: 0;
+        padding: var(--spacing-24);
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .m-menu {
+        width: calc(100% / 4);
+        height: calc(100vh - 100% - var(--border-width-navbar));
+        right: 0;
+        left: auto;
+        padding: var(--spacing-56) var(--spacing-36);
+        text-align: right;
+    }
+
+    .m-hero {
+        padding: var(--spacing-36) var(--spacing-56);
+        grid-column: span 2;
+        grid-row: span 2;
+        text-align: left;
+    }
+
+    .m-card {
+        padding: var(--spacing-36);
+    }
+
+}

@@ -1,60 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-
   <title>Frontend Mentor | Grid landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./assets/styles/styles.css">
 </head>
-<body>
 
-  <!-- Nav -->
-  Bridge Collective
+<body class="o-grid-page">
+  <header>
+    <nav class="og-navbar o-flex-between">
+      <div class="m-logo"><span class="a-circle"></span>Bridge Collective</div>
+      <button id="menu-button" aria-expanded="false">
+        <img id="menu-button-image" src="./assets/images/icon-menu.svg" alt="menu">
+      </button>
+      <!-- Menu panel — hidden until the hamburger is activated -->
+      <ul id="nav-menu" class="m-menu u-hidden">
+        <li><a class="m-menu__link" href="#">About</a></li>
+        <li><a class="m-menu__link" href="#">Our Work</a></li>
+        <li><a class="m-menu__link" href="#">Partners</a></li>
+        <li><a class="m-menu__link" href="#">Annual Report</a></li>
+        <li><a class="m-menu__link" href="#">Donate</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- Hero -->
-  A classroom for every child.
+  <main class="o-grid-responsive-columns">
+    <section class="m-hero o-flex-column-center-content">
+      <h1 class="m-hero__title">
+        A classroom for every child.
+      </h1>
+      <p class="m-hero__paragraph">
+        We fund the schools, train the teachers, and measure what works — so every child we reach today becomes a
+        graduate
+        tomorrow.
+      </p>
+    </section>
+    <!-- Stats -->
+    <article class="m-card o-flex-column-between">
+      <div class="o-flex-between">
+        <img class="a-icon" src="./assets/images/icon-sparkle.svg" alt="">
+        <h2 class="m-card__stats-number">2.4M</h2>
+      </div>
+      <div class="m-card__paragraph">
+        <p class="m-card__paragraph-title">Students reached</p>
+        <p>Across 31 countries since 2011.</p>
+      </div>
+    </article>
+    <article class="m-card o-flex-column-between">
+      <div class="o-flex-between">
+        <img class="a-icon" src="./assets/images/icon-plus.svg" alt="">
+        <h2 class="m-card__stats-number">1,284</h2>
+      </div>
+      <div class="m-card__paragraph">
+        <p class="m-card__paragraph-title">Schools partnered</p>
+        <p>In 14 countries, from Kenya to Guatemala.</p>
+      </div>
+    </article>
+    <article class="m-card o-flex-column-between">
+      <div class="o-flex-between">
+        <img class="a-icon" src="./assets/images/icon-arrow-right.svg" alt="">
+        <h2 class="m-card__stats-number">38K</h2>
+      </div>
+      <div class="m-card__paragraph">
+        <p class="m-card__paragraph-title">Teachers trained</p>
+        <p>Equipped with modern tools and methodology.</p>
+      </div>
+    </article>
+    <article class="m-card o-flex-column-between">
+      <div class="o-flex-between">
+        <img class="a-icon" src="./assets/images/icon-trending-up.svg" alt="">
+        <h2 class="m-card__stats-number">3.1×</h2>
+      </div>
+      <div class="m-card__paragraph">
+        <p class="m-card__paragraph-title">Graduation lift</p>
+        <p>Partner schools outperform national averages 3x.</p>
+      </div>
+    </article>
+  </main>
 
-  We fund the schools, train the teachers, and measure what works — so every child we reach today becomes a graduate tomorrow.
+  <footer class="og-footer">
+    <p>© 2026 Bridge Collective</p>
+    <p>Registered charity 12345678</p>
+  </footer>
 
-  <!-- Stats -->
-  2.4M
-  Students reached
-  Across 31 countries since 2011.
-
-  1,284
-  Schools partnered
-  In 14 countries, from Kenya to Guatemala.
-
-  38K
-  Teachers trained
-  Equipped with modern tools and methodology.
-
-  3.1×
-  Graduation lift
-  Partner schools outperform national averages 3x.
-
-  <!-- Footer -->
-  © 2026 Bridge Collective
-  Registered charity 12345678
-
-  <!-- Menu panel — hidden until the hamburger is activated -->
-  About
-  Our Work
-  Partners
-  Annual Report
-  Donate
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <div id="overlay" class="a-overlay u-hidden"></div>
 </body>
+
+<script src="assets/js/menu.js"></script>
+
 </html>

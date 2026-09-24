@@ -1,0 +1,7 @@
+:root {
+    --border-width-1px: 1px;
+    --border-width-2px: 2px;
+
+    /* tokens */
+    --border-width-navbar: var(--border-width-1px);
+}

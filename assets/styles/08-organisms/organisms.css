@@ -1,1 +1,35 @@
 /* Organisms */
+
+.og-navbar {
+    padding: var(--spacing-12) var(--spacing-16);
+    border-bottom: var(--border-width-navbar) solid var(--color-border-navbar);
+    position: relative;
+}
+
+.og-footer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+    padding: var(--spacing-24) var(--spacing-16);
+    border-top: var(--border-width-1px) solid var(--color-border-footer);
+}
+
+@media (min-width: 768px) {
+    .og-navbar {
+        padding: var(--spacing-12) var(--spacing-24);
+    }
+
+    .og-footer {
+        padding: var(--spacing-24) var(--spacing-24);
+    }
+}
+
+@media (min-width: 1024px) {
+    .og-navbar {
+        padding: var(--spacing-12) var(--spacing-36);
+    }
+
+    .og-footer {
+        padding: var(--spacing-24) var(--spacing-36);
+    }
+}
